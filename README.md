@@ -36,6 +36,8 @@ The Note.md is a file of develop records.
 
 Contact me (gaoxiang12@mails.tsinghua.edu.cn) or Wang Jing (https://github.com/jingpang) for commercial use.
 
+in "scirpts" you can find some pythons to evalute the keyframe trajectory (6DoF or 7DoF in monocular case).
+
 Thanks the following companies/people for finantial support:
 - Usens凌感科技
 - Hyperception 远形时空
