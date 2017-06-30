@@ -1,7 +1,7 @@
-#ORB-YGZ-SLAM
+# ORB-YGZ-SLAM
 This is YGZ SLAM, a faster version folked from ORB-SLAM2 (see https://github.com/raulmur/ORB_SLAM2 and the README-ORB-SLAM2.md in this repo). We put the direct tracking in SVO to accelerate the feature matching in ORB-SLAM2. We can get an average 3x speed up and keep almost same accuracy. In addition we also support monocular Visual-Inertial SLAM (VI-SLAM), following idea proposed in Raul's paper.
 
-#Dependency
+# Dependency
 If you are using ubuntu, just type "./install_dependency.sh" to install all the dependencies except pangolin.
 
 - Pangolin (for visualization): https://github.com/stevenlovegrove/Pangolin 
@@ -10,10 +10,10 @@ If you are using ubuntu, just type "./install_dependency.sh" to install all the 
 - OpenCV: sudo apt-get install libopencv-dev
 - glog (for logging): sudo apt-get install libgoogle-glog-dev
 
-#Compile
+# Compile
 run "./generate.sh" to compile all the things, or follow the steps in generate.sh
 
-#Examples
+# Examples
 We support all the examples in the original ORB-SLAM2, and also the monocular-inertial examples. You can try the EUROC dataset (http://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets) and run the monocular/mono-inertial examples by typing:
 
 ```
@@ -27,8 +27,8 @@ just like in ORB-SLAM2. For VIO examples, try:
 
 to run the VIO case.
 
-#Other things
-We follow SVO when writing direct tracking, whose speed is very fast but robustness is not very good. In EUROC it can pass the test of MH01, MH02, MH03 and V101, V201. For difficult cases it can still fail. We are still improving it and writing a better solution for stereo-inertial case.
+# Other things
+We follow SVO when writing direct tracking, whose speed is very fast but robustness is not very good. In EUROC it can pass the test of MH01, MH02, MH03 and V101, V201. For difficult cases it may still fail. We are still improving it and writing a better solution for stereo-inertial case.
 
 YGZ stands for Yi-Guo-Zhou (a port of porridge, a group of mess) because it contains feature method, direct method and imu things.
 
